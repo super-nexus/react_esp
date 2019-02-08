@@ -1,0 +1,10 @@
+.PinData{
+    width: 100%;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 5px;
+    margin: 10px 0 10px 0;
+
+}

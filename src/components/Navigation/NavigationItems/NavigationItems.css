@@ -1,0 +1,24 @@
+.NavigationItems{
+    background-color: transparent;
+    display: inline-block;
+}
+
+.NavigationItem a{
+    display: inline-block;
+    height: 15px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.NavigationItem:hover{
+    border-bottom: 2px solid orange;
+}
+
+.NavActive{
+    border-bottom: 3px solid orange;
+}
+
+.NavigationItem{
+    display: inline-block;
+}

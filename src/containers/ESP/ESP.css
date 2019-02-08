@@ -1,0 +1,26 @@
+.ESP{
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.ESP .PinDatas{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.ESP .greenButton{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ESP .ItemShowCase{
+}

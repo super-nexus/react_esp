@@ -1,28 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import {Route, Switch} from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+
+import Lights from './containers/Lights/Lights';
+import All from './containers/All/All';
+import Home from './containers/Home/Home';
+import ESP from './containers/ESP/ESP';
+
+
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <Layout>
+                    <Switch>
+                        <Route path="/all/esp_data" exact component={ESP} />
+                        <Route path="/all" exact component={All} />
+                        <Route path="/lights" component={Lights} />
+                        <Route path='/' exact component={Home} />
+                    </Switch>
+                </Layout>
+            </div>
+        );
+    }
 }
 
 export default App;
